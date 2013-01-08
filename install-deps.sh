@@ -15,6 +15,11 @@ curl -L https://get.rvm.io | bash -s stable --ruby
 npm install -g nave
 
 
+# https://github.com/creationix/nvm
+# install nvm (node version manager)
+curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+
+
 # homebrew!
 # you need the code CLI tools YOU FOOL.
 ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
