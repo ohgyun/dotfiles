@@ -5,7 +5,6 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
-alias m="cd ~/mywork/" # move to mywork
 
 
 # programs
@@ -118,3 +117,7 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+# my working directories
+alias m="cd ~/mywork/" 
+alias temp="cd ~/mywork/temp"
