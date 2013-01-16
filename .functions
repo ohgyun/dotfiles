@@ -148,7 +148,8 @@ function bash_monitor () {
         echo 
         echo '[BASH MONITOR] File changed.' 
         echo '----------------------------'
-        source "$file" # run bash if changed
+        # run bash with second parameters if changed
+        source "$file" "${@:2}"
       }
 
     cp "$tmp1" "$tmp2"
