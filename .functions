@@ -148,7 +148,7 @@ function bash_monitor () {
         echo 
         echo '[BASH MONITOR] File changed.' 
         echo '----------------------------'
-        # run bash with second parameters if changed
+        # run bash with parameters from second if changed
         source "$file" "${@:2}"
       }
 
