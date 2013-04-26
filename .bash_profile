@@ -27,3 +27,6 @@ complete -W "NSGlobalDomain" defaults
 
 # Add Android SDK to PATH
 export PATH=$PATH:~/SDK/android-sdk/platform-tools:~/SDK/android-sdk/tools
+
+# Set /usr/local/bin to highest proirity.
+export PATH=/usr/local/bin:$PATH
