@@ -32,6 +32,6 @@ export PATH=$PATH:~/SDK/android-sdk/platform-tools:~/SDK/android-sdk/tools
 export PATH=/usr/local/bin:$PATH
 
 # Set ImageMagick path
-export MAGICK_HOME="~/Development/ImageMagick-6.8.5"
+export MAGICK_HOME="$HOME/Development/ImageMagick-6.8.5"
 export PATH="$MAGICK_HOME/bin:$PATH"
 export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
