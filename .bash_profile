@@ -30,3 +30,8 @@ export PATH=$PATH:~/SDK/android-sdk/platform-tools:~/SDK/android-sdk/tools
 
 # Set /usr/local/bin to highest proirity.
 export PATH=/usr/local/bin:$PATH
+
+# Set ImageMagick path
+export MAGICK_HOME="~/Development/ImageMagick-6.8.5"
+export PATH="$MAGICK_HOME/bin:$PATH"
+export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
