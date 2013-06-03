@@ -12,7 +12,7 @@ unset file
 source ~/.rvm/scripts/rvm
 
 # init git bash completion
-source /usr/local/etc/bach_completion.d/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
