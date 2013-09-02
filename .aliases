@@ -120,3 +120,6 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 # my working directories
 alias m="cd ~/mywork/" 
 alias temp="cd ~/mywork/temp"
+
+# Open Chrome with exposing gc
+alias chromegc="open -a Google\ Chrome --args --js-flags=--expose-gc"
