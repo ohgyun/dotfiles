@@ -123,3 +123,6 @@ alias temp="cd ~/mywork/temp"
 
 # Open Chrome with exposing gc
 alias chromegc="open -a Google\ Chrome --args --js-flags=--expose-gc"
+
+# Alias for node-webkit
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
