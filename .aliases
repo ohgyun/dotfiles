@@ -38,6 +38,10 @@ alias la="ls -la ${colorflag}"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
+# Process Status and Grep
+alias psgrep="ps -ef | grep -e PID -e"
+
+
 # Always use color output for `ls`
 if [[ "$OSTYPE" =~ ^darwin ]]; then
 	alias ls="command ls -G"
