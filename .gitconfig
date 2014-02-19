@@ -1,9 +1,12 @@
 [alias]
-	c = commit -am
+	c = commit
+	b = branch
+	ch = checkout
 	up = pull
 	p = push
 	s = status -s
 	df = diff --color --color-words --abbrev
+	l = log --color --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr)%Creset' --abbrev-commit -5
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [color]
 	ui = always
