@@ -8,9 +8,6 @@ unset file
 # init z   https://github.com/rupa/z
 . ~/code/z/z.sh
 
-# init rvm
-source ~/.rvm/scripts/rvm
-
 # init git bash completion
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
@@ -28,13 +25,5 @@ export LANG="en_US"
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
-# Add Android SDK to PATH
-export PATH=$PATH:~/SDK/android-sdk/platform-tools:~/SDK/android-sdk/tools
-
 # Set /usr/local/bin to highest proirity.
 export PATH=/usr/local/bin:$PATH
-
-# Set ImageMagick path
-export MAGICK_HOME="$HOME/Development/ImageMagick-6.8.5"
-export PATH="$MAGICK_HOME/bin:$PATH"
-export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"

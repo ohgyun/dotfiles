@@ -8,8 +8,8 @@ alias -- -="cd -"
 
 
 # programs
-# Sublime Text 2
-alias s="/Applications/\"Sublime Text 2.app\"/Contents/SharedSupport/bin/subl"
+# Sublime Text 3
+alias s="/Applications/\"Sublime Text.app\"/Contents/SharedSupport/bin/subl"
 
 
 # be nice
@@ -127,6 +127,3 @@ alias temp="cd ~/mywork/temp"
 
 # Open Chrome with exposing gc
 alias chromegc="open -a Google\ Chrome --args --js-flags=--expose-gc"
-
-# Alias for node-webkit
-alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
