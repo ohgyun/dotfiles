@@ -32,5 +32,12 @@ export LANG="en_US"
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
-# Set /usr/local/bin to highest proirity.
-export PATH=/usr/local/bin:$PATH
+# nvm 실행
+if [ -f ~/.nvm/nvm.sh ]; then
+    . ~/.nvm/nvm.sh
+fi
+
+# rbenv 실행
+if [ -f /usr/local/bin/rbenv ]; then
+    eval "$(rbenv init -)"
+fi
