@@ -8,8 +8,15 @@ unset file
 # init z   https://github.com/rupa/z
 . ~/code/z/z.sh
 
-# init git bash completion
-source /usr/local/etc/bash_completion.d/git-completion.bash
+# 직접 설치한 경우(http://ohgyun.com/413)
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+    source /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+
+# 홈브루로 설치한 경우
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
