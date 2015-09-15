@@ -61,6 +61,7 @@ set nojoinspaces " Only insert single space after a '.', '?' and '!' with a join
 set nostartofline " Don't reset cursor to start of line when moving around.
 set nowrap " Do not wrap lines.
 set nu " Enable line numbers.
+set rnu " Enable Relative numbers.
 set ofu=syntaxcomplete#Complete " Set omni-completion method.
 set report=0 " Show all changes.
 set ruler " Show the cursor position
@@ -184,6 +185,14 @@ map <leader><Enter> o<ESC>
 
 " Search and replace word under cursor (,*)
 nnoremap <leader>* :%s/\<<C-r><C-w>\>//<Left>
+
+" Speed up normal mode indenting
+noremap > >>
+noremap < <<
+
+" Keep selections after indentation
+vnoremap > >gv
+vnoremap < <gv
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
