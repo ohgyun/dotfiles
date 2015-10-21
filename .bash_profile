@@ -41,3 +41,8 @@ fi
 if [ -f /usr/local/bin/rbenv ]; then
     eval "$(rbenv init -)"
 fi
+
+# pyenv 실행
+if [[ -f /usr/local/bin/pyenv ]]; then
+    eval "$(pyenv init -)"
+fi
