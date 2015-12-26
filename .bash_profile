@@ -46,3 +46,8 @@ fi
 if [[ -f /usr/local/bin/pyenv ]]; then
     eval "$(pyenv init -)"
 fi
+
+# pyenv-virtualenv
+if [[ -f /usr/local/bin/pyenv-virtualenv ]]; then
+    eval "$(pyenv virtualenv-init -)"
+fi
