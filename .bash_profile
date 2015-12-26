@@ -51,3 +51,8 @@ fi
 if [[ -f /usr/local/bin/pyenv-virtualenv ]]; then
     eval "$(pyenv virtualenv-init -)"
 fi
+
+# autoenv
+if [[ -f /usr/local/opt/autoenv/activate.sh ]]; then
+    source /usr/local/opt/autoenv/activate.sh
+fi
