@@ -1,0 +1,9 @@
+set ignorecase
+set smartcase
+
+" 창 나눈 후 나눈 창에 바로 포커스
+set splitright
+set splitbottom
+
+" XVim 에서는 rn, rnu 대신 전체 이름으로 적어야 한다.
+set relativenumber
