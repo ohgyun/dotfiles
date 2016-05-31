@@ -1,1 +1,5 @@
 source ~/.vimrc
+
+" IdeaVim의 Relative Number는 수천 라인 이상에서 성능이 급격히 떨어진다.
+" 숫자 없이 사용하고 Relative Number는 별도의 플러그인을 사용한다.
+set nonumber
