@@ -19,7 +19,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # Add docker completion
-if [[ -f /usr/local/etc/bash_completion.d/docker.bash-completion ]; then
+if [[ -f /usr/local/etc/bash_completion.d/docker.bash-completion ]]; then
     source /usr/local/etc/bash_completion.d/docker-compose.bash-completion
     source /usr/local/etc/bash_completion.d/docker-machine.bash-completion
     source /usr/local/etc/bash_completion.d/docker.bash-completion
