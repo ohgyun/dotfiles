@@ -49,17 +49,3 @@ if [ -f /usr/local/bin/rbenv ]; then
     eval "$(rbenv init -)"
 fi
 
-# pyenv 실행
-if [[ -f /usr/local/bin/pyenv ]]; then
-    eval "$(pyenv init -)"
-fi
-
-# pyenv-virtualenv
-if [[ -f /usr/local/bin/pyenv-virtualenv ]]; then
-    eval "$(pyenv virtualenv-init -)"
-fi
-
-# autoenv
-if [[ -f /usr/local/opt/autoenv/activate.sh ]]; then
-    source /usr/local/opt/autoenv/activate.sh
-fi
