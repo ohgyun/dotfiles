@@ -43,3 +43,8 @@ complete -W "NSGlobalDomain" defaults
 if [ -f /usr/local/bin/rbenv ]; then
     eval "$(rbenv init -)"
 fi
+
+# Grunt autocomplete
+if [[ -f /usr/local/bin/grunt ]]; then
+    eval "$(grunt --completion=bash)"
+fi
