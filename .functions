@@ -164,7 +164,7 @@ function volume () {
 
 # Show git log with fzf
 # https://gist.github.com/junegunn/f4fca918e937e6bf5bad
-gli() {
+gitl() {
   # param validation
   if [[ ! `git log -n 1 $@ | head -n 1` ]] ;then
     return
@@ -202,4 +202,32 @@ gli() {
 
   # piping them
   "${gitlog[@]}" | "${fzf[@]}"
+}
+
+# git checkout
+gitch() {
+  local tags branches target
+  branches=$(
+    git --no-pager branch --all \
+    | sed '/^$/d' | sed -e 's/remotes\/origin/origin/') || return
+  tags=$(
+    git --no-pager tag | awk '{print "\x1b[35;1mtag\x1b[m\t" $1}') || return
+  target=$(
+    (echo "$branches"; echo "$tags") |
+    fzf --no-hscroll --no-multi -n 2 \
+        --ansi) || return
+
+  # current
+  # *"str"* 는 포함 관계
+  if [[ "$target" == *"*"* ]]; then
+    git checkout $(awk '{print $2}' <<<"$target")
+
+  # remote branch
+  elif [[ "$target" == *"origin"* ]]; then
+    git checkout -t $(awk '{print $1}' <<<"$target")
+
+  # local branch
+  else
+    git checkout $(awk '{print $1}' <<<"$target")
+  fi
 }
