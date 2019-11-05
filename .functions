@@ -3,7 +3,6 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
-
 # find shorthand
 function f() {
     find . -name "$1"
@@ -76,7 +75,6 @@ function gitexport(){
 }
 
 
-
 # get gzipped size
 function gz() {
 	echo "orig size    (bytes): "
@@ -127,7 +125,6 @@ function extract() {
 
 # Watch a bashfile and run it if changed
 function bash_monitor () {
-
   if [[ -z "$1" ]]; then
     echo "usage: bash_monitor <bashfilename>"
     exit 1
@@ -168,7 +165,6 @@ function volume () {
 # Show git log with fzf
 # https://gist.github.com/junegunn/f4fca918e937e6bf5bad
 gli() {
-
   # param validation
   if [[ ! `git log -n 1 $@ | head -n 1` ]] ;then
     return
@@ -184,9 +180,10 @@ gli() {
   # git command
   local gitlog=(
     git log
-    --graph --color=always
+    --graph
+    --color=always
     --abbrev=7
-    --format='%C(auto)%h %an %C(blue)%s %C(yellow)%cr'
+    --format='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
     $@
   )
 
