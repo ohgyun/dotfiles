@@ -48,3 +48,6 @@ fi
 if [[ -f /usr/local/bin/grunt ]]; then
     eval "$(grunt --completion=bash)"
 fi
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
