@@ -214,7 +214,7 @@ gitch() {
     git --no-pager tag | awk '{print "\x1b[35;1mtag\x1b[m\t" $1}') || return
   target=$(
     (echo "$branches"; echo "$tags") |
-    fzf --no-hscroll --no-multi -n 2 \
+    fzf --no-hscroll --no-multi -n 1 \
         --ansi) || return
 
   # current
